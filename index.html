@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guidance</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script> <!-- Faker.js CDN -->
+</head>
+<body>
+    <div class="container">
+        <h1>Career Guidance Form</h1>
+        <form id="careerForm">
+            <label for="hobby">What is your favorite hobby?</label>
+            <input type="text" id="hobby" name="hobby">
+
+            <label for="subject">Which subject do you excel at?</label>
+            <input type="text" id="subject" name="subject">
+
+            <label for="dreamJob">What is your dream job?</label>
+            <input type="text" id="dreamJob" name="dreamJob">
+
+            <button type="button" onclick="generateParagraph()">Generate</button>
+            <button type="button" onclick="generateRandomData()">Generate Example</button> <!-- New Button -->
+        </form>
+        <p id="output"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
